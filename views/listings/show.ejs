@@ -1,10 +1,8 @@
 <% layout("/layouts/boilerplate.ejs") -%>
-<!-- <script>
-    const mapToken = "<%=// process.env.MAP_TOKEN %>";
-    const listing = <%-//JASON.stringify(listing)%>;
-    const location = <%-// JASON.stringify(listing.location) %>
-</script> -->
-
+<script>
+    const mapToken = "<%=process.env.MAP_TOKEN%>";
+    const listing = <%- JSON.stringify(listing) %>;
+</script>
 
 <div class="row">
     <div class="col-8 offset-3 mt-2">
@@ -71,22 +69,25 @@
             <% } %>
             <% for(let review of listing.reviews) {%>
                 <div class="card col-5 ms-3 mb-3">
-                    <div class="card-body">
+                    <div class="card-body mb-2">
                         <h5 class="card-title"> @<%= review.author.username %> </h5>
                         <p class="starability-result" data-rating="<%= review.rating %>"></p>
                         <p class="card-text"><%= review.comment %></p>
                     </div>
-                    <form class="mb-3 mt-2" method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
-                        <button class="btn btn-sm btn-dark">Delete</button>
-                    </form>
+                    <% if(currUser)  { %>
+                        <% if(currUser.username == (review.author.username)) { %>
+                        <form class="mb-3 mt-2" method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
+                            <button class="btn btn-sm btn-dark">Delete</button>
+                        </form>
+                        <% } %>
+                    <%}%>
                 </div>
             <% } %>
         </div>
     </div>
-    <!-- <div class="col-8 offset-3">
+    <div class="col-8 offset-3">
         <h2>Where you'll be</h2>
         <div id="map"></div>
-    </div> -->
+    </div>
 </div>
-
-<!-- <script src="/js/map.js"></script> -->
+<script src="/JS/map.js"></script>
