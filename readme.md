@@ -1,7 +1,10 @@
 # Wanderlust 🌍🏡
 
 Wanderlust is a **full-stack web application** inspired by Airbnb, allowing users to **browse, create, edit, and book travel listings** with interactive maps. Built with the **MERN stack**, this project provides a seamless experience for both travelers and hosts.
-
+---
+# Note
+The Website is live at:-https://wanderlust-m9ht.onrender.com/listings
+The Website will take about 30sec to load then it will run smoothly
 ---
 
 ## 🚀 Features
