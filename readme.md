@@ -78,7 +78,7 @@ Server will be running at **http://localhost:3000** 🚀
 ## 👨‍💻 Author
 **Yadveer Singh Pawar**  
 📌 [GitHub](https://github.com/Yadveer1)  
-📌 [LinkedIn](https://www.linkedin.com/in/yadveer-singh-pawar/)  
+📌 [LinkedIn](https://www.linkedin.com/in/yadveersingh/)  
 
 ---
 
