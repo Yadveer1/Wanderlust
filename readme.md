@@ -67,18 +67,6 @@ Server will be running at **http://localhost:3000** 🚀
 
 ---
 
-## 📸 Screenshots
-### Home Page
-![Home](https://via.placeholder.com/800x400?text=Home+Page)
-
-### Listing Page
-![Listing](https://via.placeholder.com/800x400?text=Listing+Page)
-
-### Map Integration
-![Map](https://via.placeholder.com/800x400?text=Map+View)
-
----
-
 ## 🏗️ Future Improvements
 - ✅ Booking system for reservations
 - ✅ Search and filter functionality
